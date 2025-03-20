@@ -1,4 +1,3 @@
-import java.util.ArrayDeque;
 import java.util.Date;
 
 public class Reservation {
@@ -6,21 +5,21 @@ public class Reservation {
     private final Date endTime;
     private final Activity reservedActivity;
 
-    Reservation(Date startTime, Date endTime, Activity reservedActivity) {
+    public Reservation(Date startTime, Date endTime, Activity reservedActivity) {
         this.startTime = startTime;
         this.endTime = endTime;
         this.reservedActivity = reservedActivity;
     }
 
-    Date getStartTime() {
+    public Date getStartTime() {
         return startTime;
     }
 
-    Date getEndTime() {
+    public Date getEndTime() {
         return endTime;
     }
 
-    Activity getReservedActivity() {
+    public Activity getReservedActivity() {
         return reservedActivity;
     }
 }
